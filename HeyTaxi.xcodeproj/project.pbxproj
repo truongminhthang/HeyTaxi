@@ -1,0 +1,556 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FF6877921E5C737C007070D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6877911E5C737C007070D3 /* AppDelegate.swift */; };
+		FF6877941E5C737C007070D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6877931E5C737C007070D3 /* ViewController.swift */; };
+		FF6877971E5C737C007070D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF6877951E5C737C007070D3 /* Main.storyboard */; };
+		FF68779A1E5C737C007070D3 /* HeyTaxi.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FF6877981E5C737C007070D3 /* HeyTaxi.xcdatamodeld */; };
+		FF68779C1E5C737C007070D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF68779B1E5C737C007070D3 /* Assets.xcassets */; };
+		FF68779F1E5C737C007070D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF68779D1E5C737C007070D3 /* LaunchScreen.storyboard */; };
+		FF6877AA1E5C737C007070D3 /* HeyTaxiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6877A91E5C737C007070D3 /* HeyTaxiTests.swift */; };
+		FF6877B51E5C737C007070D3 /* HeyTaxiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6877B41E5C737C007070D3 /* HeyTaxiUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FF6877A61E5C737C007070D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF6877861E5C737C007070D3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF68778D1E5C737C007070D3;
+			remoteInfo = HeyTaxi;
+		};
+		FF6877B11E5C737C007070D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF6877861E5C737C007070D3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF68778D1E5C737C007070D3;
+			remoteInfo = HeyTaxi;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FF68778E1E5C737C007070D3 /* HeyTaxi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeyTaxi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF6877911E5C737C007070D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FF6877931E5C737C007070D3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FF6877961E5C737C007070D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FF6877991E5C737C007070D3 /* HeyTaxi.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HeyTaxi.xcdatamodel; sourceTree = "<group>"; };
+		FF68779B1E5C737C007070D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FF68779E1E5C737C007070D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FF6877A01E5C737C007070D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF6877A51E5C737C007070D3 /* HeyTaxiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeyTaxiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF6877A91E5C737C007070D3 /* HeyTaxiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeyTaxiTests.swift; sourceTree = "<group>"; };
+		FF6877AB1E5C737C007070D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF6877B01E5C737C007070D3 /* HeyTaxiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeyTaxiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF6877B41E5C737C007070D3 /* HeyTaxiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeyTaxiUITests.swift; sourceTree = "<group>"; };
+		FF6877B61E5C737C007070D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF68778B1E5C737C007070D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF6877A21E5C737C007070D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF6877AD1E5C737C007070D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FF6877851E5C737C007070D3 = {
+			isa = PBXGroup;
+			children = (
+				FF6877901E5C737C007070D3 /* HeyTaxi */,
+				FF6877A81E5C737C007070D3 /* HeyTaxiTests */,
+				FF6877B31E5C737C007070D3 /* HeyTaxiUITests */,
+				FF68778F1E5C737C007070D3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FF68778F1E5C737C007070D3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF68778E1E5C737C007070D3 /* HeyTaxi.app */,
+				FF6877A51E5C737C007070D3 /* HeyTaxiTests.xctest */,
+				FF6877B01E5C737C007070D3 /* HeyTaxiUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF6877901E5C737C007070D3 /* HeyTaxi */ = {
+			isa = PBXGroup;
+			children = (
+				FF6877911E5C737C007070D3 /* AppDelegate.swift */,
+				FF6877931E5C737C007070D3 /* ViewController.swift */,
+				FF6877951E5C737C007070D3 /* Main.storyboard */,
+				FF68779B1E5C737C007070D3 /* Assets.xcassets */,
+				FF68779D1E5C737C007070D3 /* LaunchScreen.storyboard */,
+				FF6877A01E5C737C007070D3 /* Info.plist */,
+				FF6877981E5C737C007070D3 /* HeyTaxi.xcdatamodeld */,
+			);
+			path = HeyTaxi;
+			sourceTree = "<group>";
+		};
+		FF6877A81E5C737C007070D3 /* HeyTaxiTests */ = {
+			isa = PBXGroup;
+			children = (
+				FF6877A91E5C737C007070D3 /* HeyTaxiTests.swift */,
+				FF6877AB1E5C737C007070D3 /* Info.plist */,
+			);
+			path = HeyTaxiTests;
+			sourceTree = "<group>";
+		};
+		FF6877B31E5C737C007070D3 /* HeyTaxiUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FF6877B41E5C737C007070D3 /* HeyTaxiUITests.swift */,
+				FF6877B61E5C737C007070D3 /* Info.plist */,
+			);
+			path = HeyTaxiUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF68778D1E5C737C007070D3 /* HeyTaxi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF6877B91E5C737C007070D3 /* Build configuration list for PBXNativeTarget "HeyTaxi" */;
+			buildPhases = (
+				FF68778A1E5C737C007070D3 /* Sources */,
+				FF68778B1E5C737C007070D3 /* Frameworks */,
+				FF68778C1E5C737C007070D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HeyTaxi;
+			productName = HeyTaxi;
+			productReference = FF68778E1E5C737C007070D3 /* HeyTaxi.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FF6877A41E5C737C007070D3 /* HeyTaxiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF6877BC1E5C737C007070D3 /* Build configuration list for PBXNativeTarget "HeyTaxiTests" */;
+			buildPhases = (
+				FF6877A11E5C737C007070D3 /* Sources */,
+				FF6877A21E5C737C007070D3 /* Frameworks */,
+				FF6877A31E5C737C007070D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF6877A71E5C737C007070D3 /* PBXTargetDependency */,
+			);
+			name = HeyTaxiTests;
+			productName = HeyTaxiTests;
+			productReference = FF6877A51E5C737C007070D3 /* HeyTaxiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FF6877AF1E5C737C007070D3 /* HeyTaxiUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF6877BF1E5C737C007070D3 /* Build configuration list for PBXNativeTarget "HeyTaxiUITests" */;
+			buildPhases = (
+				FF6877AC1E5C737C007070D3 /* Sources */,
+				FF6877AD1E5C737C007070D3 /* Frameworks */,
+				FF6877AE1E5C737C007070D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF6877B21E5C737C007070D3 /* PBXTargetDependency */,
+			);
+			name = HeyTaxiUITests;
+			productName = HeyTaxiUITests;
+			productReference = FF6877B01E5C737C007070D3 /* HeyTaxiUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF6877861E5C737C007070D3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Trương Thắng";
+				TargetAttributes = {
+					FF68778D1E5C737C007070D3 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = 56AJJ634ZU;
+						ProvisioningStyle = Automatic;
+					};
+					FF6877A41E5C737C007070D3 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = 56AJJ634ZU;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FF68778D1E5C737C007070D3;
+					};
+					FF6877AF1E5C737C007070D3 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = 56AJJ634ZU;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FF68778D1E5C737C007070D3;
+					};
+				};
+			};
+			buildConfigurationList = FF6877891E5C737C007070D3 /* Build configuration list for PBXProject "HeyTaxi" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FF6877851E5C737C007070D3;
+			productRefGroup = FF68778F1E5C737C007070D3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF68778D1E5C737C007070D3 /* HeyTaxi */,
+				FF6877A41E5C737C007070D3 /* HeyTaxiTests */,
+				FF6877AF1E5C737C007070D3 /* HeyTaxiUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF68778C1E5C737C007070D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF68779F1E5C737C007070D3 /* LaunchScreen.storyboard in Resources */,
+				FF68779C1E5C737C007070D3 /* Assets.xcassets in Resources */,
+				FF6877971E5C737C007070D3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF6877A31E5C737C007070D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF6877AE1E5C737C007070D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF68778A1E5C737C007070D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF68779A1E5C737C007070D3 /* HeyTaxi.xcdatamodeld in Sources */,
+				FF6877941E5C737C007070D3 /* ViewController.swift in Sources */,
+				FF6877921E5C737C007070D3 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF6877A11E5C737C007070D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF6877AA1E5C737C007070D3 /* HeyTaxiTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF6877AC1E5C737C007070D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF6877B51E5C737C007070D3 /* HeyTaxiUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FF6877A71E5C737C007070D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF68778D1E5C737C007070D3 /* HeyTaxi */;
+			targetProxy = FF6877A61E5C737C007070D3 /* PBXContainerItemProxy */;
+		};
+		FF6877B21E5C737C007070D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF68778D1E5C737C007070D3 /* HeyTaxi */;
+			targetProxy = FF6877B11E5C737C007070D3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FF6877951E5C737C007070D3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF6877961E5C737C007070D3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FF68779D1E5C737C007070D3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF68779E1E5C737C007070D3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FF6877B71E5C737C007070D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FF6877B81E5C737C007070D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF6877BA1E5C737C007070D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 56AJJ634ZU;
+				INFOPLIST_FILE = HeyTaxi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.Big0.HeyTaxi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		FF6877BB1E5C737C007070D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 56AJJ634ZU;
+				INFOPLIST_FILE = HeyTaxi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.Big0.HeyTaxi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		FF6877BD1E5C737C007070D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 56AJJ634ZU;
+				INFOPLIST_FILE = HeyTaxiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.Big0.HeyTaxiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HeyTaxi.app/HeyTaxi";
+			};
+			name = Debug;
+		};
+		FF6877BE1E5C737C007070D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 56AJJ634ZU;
+				INFOPLIST_FILE = HeyTaxiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.Big0.HeyTaxiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HeyTaxi.app/HeyTaxi";
+			};
+			name = Release;
+		};
+		FF6877C01E5C737C007070D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 56AJJ634ZU;
+				INFOPLIST_FILE = HeyTaxiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.Big0.HeyTaxiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = HeyTaxi;
+			};
+			name = Debug;
+		};
+		FF6877C11E5C737C007070D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 56AJJ634ZU;
+				INFOPLIST_FILE = HeyTaxiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.Big0.HeyTaxiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = HeyTaxi;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF6877891E5C737C007070D3 /* Build configuration list for PBXProject "HeyTaxi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF6877B71E5C737C007070D3 /* Debug */,
+				FF6877B81E5C737C007070D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF6877B91E5C737C007070D3 /* Build configuration list for PBXNativeTarget "HeyTaxi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF6877BA1E5C737C007070D3 /* Debug */,
+				FF6877BB1E5C737C007070D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FF6877BC1E5C737C007070D3 /* Build configuration list for PBXNativeTarget "HeyTaxiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF6877BD1E5C737C007070D3 /* Debug */,
+				FF6877BE1E5C737C007070D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FF6877BF1E5C737C007070D3 /* Build configuration list for PBXNativeTarget "HeyTaxiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF6877C01E5C737C007070D3 /* Debug */,
+				FF6877C11E5C737C007070D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FF6877981E5C737C007070D3 /* HeyTaxi.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FF6877991E5C737C007070D3 /* HeyTaxi.xcdatamodel */,
+			);
+			currentVersion = FF6877991E5C737C007070D3 /* HeyTaxi.xcdatamodel */;
+			path = HeyTaxi.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FF6877861E5C737C007070D3 /* Project object */;
+}
