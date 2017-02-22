@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12113" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12078"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -147,7 +147,7 @@
                             <constraint firstItem="gP7-0L-YDV" firstAttribute="leading" secondItem="kdZ-hq-Z5T" secondAttribute="leading" id="lfa-ZK-SU3"/>
                         </constraints>
                         <connections>
-                            <outletCollection property="gestureRecognizers" destination="EmB-If-300" appends="YES" id="qdH-Pa-jmf"/>
+                            <outletCollection property="gestureRecognizers" destination="xGp-XO-cEv" appends="YES" id="rqO-lk-4eM"/>
                         </connections>
                     </view>
                     <navigationItem key="navigationItem" id="Rmh-3E-vWD">
@@ -160,17 +160,18 @@
                     <size key="freeformSize" width="375" height="350"/>
                     <connections>
                         <outlet property="searchBar" destination="QC0-wa-RGZ" id="Jqj-zf-V3p"/>
+                        <outlet property="tableView" destination="gP7-0L-YDV" id="EFv-8g-KOl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2kF-Sa-Po0" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <panGestureRecognizer cancelsTouchesInView="NO" delaysTouchesBegan="YES" delaysTouchesEnded="NO" minimumNumberOfTouches="1" id="EmB-If-300">
+                <panGestureRecognizer minimumNumberOfTouches="1" id="xGp-XO-cEv">
                     <connections>
-                        <outlet property="delegate" destination="82a-QT-Zc4" id="yqA-4j-5Hd"/>
+                        <outlet property="delegate" destination="82a-QT-Zc4" id="gJg-GP-E1m"/>
                     </connections>
                 </panGestureRecognizer>
-                <panGestureRecognizer minimumNumberOfTouches="1" id="aJ1-ti-6WG">
+                <panGestureRecognizer minimumNumberOfTouches="1" id="Ujv-Na-xW7">
                     <connections>
-                        <outlet property="delegate" destination="82a-QT-Zc4" id="p8F-Tx-u2e"/>
+                        <action selector="handlePanGesture:" destination="82a-QT-Zc4" id="8qa-EX-hSF"/>
                     </connections>
                 </panGestureRecognizer>
                 <searchBar contentMode="redraw" barStyle="black" searchBarStyle="minimal" placeholder="Bạn muốn đến đâu?" translatesAutoresizingMaskIntoConstraints="NO" id="QC0-wa-RGZ">
@@ -183,7 +184,7 @@
                     <textInputTraits key="textInputTraits"/>
                     <connections>
                         <outlet property="delegate" destination="82a-QT-Zc4" id="LFi-Px-J84"/>
-                        <outletCollection property="gestureRecognizers" destination="aJ1-ti-6WG" appends="YES" id="U1Y-bK-Kcc"/>
+                        <outletCollection property="gestureRecognizers" destination="Ujv-Na-xW7" appends="YES" id="cQ5-io-dDA"/>
                     </connections>
                 </searchBar>
             </objects>

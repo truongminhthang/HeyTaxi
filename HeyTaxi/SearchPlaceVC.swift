@@ -80,6 +80,7 @@ class SearchPlaceVC: BaseTranformableVC  {
             fatalError("Error: CLLocationManager is Monitoring Unavailable")
         }
     }
+
 }
 
 // MARK: - UISearchBarDelegate
