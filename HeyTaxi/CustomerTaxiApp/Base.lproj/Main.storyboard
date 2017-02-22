@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--ContainerVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ContainerVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ContainerVC" customModule="CustomerTaxiApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="74n-sp-ugD" userLabel="Map">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <connections>
+                                    <segue destination="P98-kh-2d1" kind="embed" identifier="embedMapVC" id="OCJ-6l-JPM"/>
+                                </connections>
+                            </containerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sDA-Q9-oFu">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </button>
+                            <containerView hidden="YES" opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DDS-ye-XlU" userLabel="Side Menu">
+                                <rect key="frame" x="0.0" y="0.0" width="300" height="667"/>
+                                <connections>
+                                    <segue destination="V2U-u9-SEd" kind="embed" identifier="embedSideMenu" id="nBy-ZF-K7n"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="sDA-Q9-oFu" secondAttribute="bottom" id="3Nt-tg-97W"/>
+                            <constraint firstItem="DDS-ye-XlU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="6o6-A7-i4Y"/>
+                            <constraint firstItem="sDA-Q9-oFu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="73z-Sf-1as"/>
+                            <constraint firstItem="74n-sp-ugD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="7c2-8K-JUc"/>
+                            <constraint firstAttribute="trailing" secondItem="sDA-Q9-oFu" secondAttribute="trailing" id="8g0-pU-qQM"/>
+                            <constraint firstItem="DDS-ye-XlU" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="9Hg-c0-ox5"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="DDS-ye-XlU" secondAttribute="bottom" id="Nbv-Hs-awu"/>
+                            <constraint firstItem="DDS-ye-XlU" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" id="jaz-qm-4Jh"/>
+                            <constraint firstAttribute="trailing" secondItem="74n-sp-ugD" secondAttribute="trailing" id="k8Q-w2-8kX"/>
+                            <constraint firstItem="74n-sp-ugD" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="nP5-aI-riH"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="74n-sp-ugD" secondAttribute="bottom" id="q3P-Ju-88V"/>
+                            <constraint firstItem="sDA-Q9-oFu" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="yjb-hS-x0x"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="buttonCorver" destination="sDA-Q9-oFu" id="89N-Ml-VAJ"/>
+                        <outlet property="leftConstraintOfSideMenu" destination="6o6-A7-i4Y" id="Uxe-C3-q6h"/>
+                        <outlet property="mapView" destination="74n-sp-ugD" id="gSv-Tp-4ET"/>
+                        <outlet property="sideMenuView" destination="DDS-ye-XlU" id="8YU-8a-sMA"/>
+                        <segue destination="ifV-7i-iUq" kind="presentation" identifier="showAddPayment" id="31v-ol-iEQ"/>
+                        <segue destination="AX5-Bb-yU9" kind="presentation" identifier="showTripHistories" id="4MX-eu-Ma9"/>
+                        <segue destination="rTR-ZI-IZM" kind="popoverPresentation" identifier="popupAddPromotion" popoverAnchorView="8bC-Xf-vdC" id="enQ-h1-xDg">
+                            <popoverArrowDirection key="popoverArrowDirection"/>
+                        </segue>
+                        <segue destination="e4w-I6-OKp" kind="presentation" identifier="showUserInfo" id="0va-mm-GKb"/>
+                        <segue destination="j6V-jX-zdR" kind="presentation" identifier="showSupportVC" id="qWl-bG-IhA"/>
+                        <segue destination="que-zB-JtZ" kind="presentation" identifier="showBecomeCooperationVC" id="0Xw-P0-pmN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="122.78860569715144"/>
+        </scene>
+        <!--SideMenuTableVC-->
+        <scene sceneID="fhc-HL-fiK">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SideMenu" referencedIdentifier="SideMenuTableVC" id="V2U-u9-SEd" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VdW-nc-80u" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1055" y="122"/>
+        </scene>
+        <!--MapContainerVC-->
+        <scene sceneID="bW6-bq-2ff">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Map" referencedIdentifier="MapContainerVC" id="P98-kh-2d1" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fvn-97-CKq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1138" y="162"/>
+        </scene>
+        <!--navTripHistories-->
+        <scene sceneID="ci3-CG-H6d">
+            <objects>
+                <viewControllerPlaceholder storyboardName="History" referencedIdentifier="navTripHistories" id="AX5-Bb-yU9" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Ag-qF-ZLs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="989" y="-186"/>
+        </scene>
+        <!--NavAddPayment-->
+        <scene sceneID="aSq-5e-5El">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="AddMorePaymentTableVC" storyboardName="AddPayment" referencedIdentifier="NavAddPayment" id="ifV-7i-iUq" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uZc-Au-Gke" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="973" y="-136"/>
+        </scene>
+        <!--PromotionTableVC-->
+        <scene sceneID="O74-ju-PjP">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Promotion" referencedIdentifier="PromotionTableVC" id="rTR-ZI-IZM" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jNn-Sc-hWj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="991" y="-236"/>
+        </scene>
+        <!--navUserInfo-->
+        <scene sceneID="8cc-nF-Wlv">
+            <objects>
+                <viewControllerPlaceholder storyboardName="UserInfo" referencedIdentifier="navUserInfo" id="e4w-I6-OKp" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E66-UJ-fts" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="952" y="-292"/>
+        </scene>
+        <!--navSupport-->
+        <scene sceneID="GdC-kQ-dcn">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="navSupport" storyboardName="Support" referencedIdentifier="navSupport" id="j6V-jX-zdR" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wAR-K3-gQn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="950" y="-394"/>
+        </scene>
+        <!--navBecomeCooperation-->
+        <scene sceneID="ZK0-9a-vgO">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="navBecomeCooperation" storyboardName="Cooperation" referencedIdentifier="navBecomeCooperation" id="que-zB-JtZ" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MJr-D8-GcN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1009" y="-345"/>
+        </scene>
+    </scenes>
+</document>

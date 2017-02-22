@@ -7,14 +7,49 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5431BD10A9DA499EF88EF36F /* libPods-HeyTaxi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F0A57100A8236735FB05840 /* libPods-HeyTaxi.a */; };
+		FF1BDA5C1E5D64310075E8E3 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1BDA5B1E5D64310075E8E3 /* Button.swift */; };
+		FF1BDA5E1E5D73E00075E8E3 /* Geofencing.gpx in Resources */ = {isa = PBXBuildFile; fileRef = FF1BDA5D1E5D73E00075E8E3 /* Geofencing.gpx */; };
+		FF4F59251E5D095E00467F19 /* PlaceEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4F59241E5D095E00467F19 /* PlaceEntity.swift */; };
+		FF55A2461E5DA158000095E8 /* OrderTaxi.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF55A2451E5DA158000095E8 /* OrderTaxi.storyboard */; };
+		FF55A2481E5DA1BD000095E8 /* Vehicles.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF55A2471E5DA1BD000095E8 /* Vehicles.plist */; };
+		FF55A24D1E5DA1E1000095E8 /* SelectVehicleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF55A2491E5DA1E1000095E8 /* SelectVehicleVC.swift */; };
+		FF55A24E1E5DA1E1000095E8 /* SelectVehicleCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF55A24A1E5DA1E1000095E8 /* SelectVehicleCollectionVC.swift */; };
+		FF55A24F1E5DA1E1000095E8 /* CollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF55A24B1E5DA1E1000095E8 /* CollectionViewFlowLayout.swift */; };
+		FF55A2501E5DA1E1000095E8 /* SelectVehicleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF55A24C1E5DA1E1000095E8 /* SelectVehicleCell.swift */; };
+		FF55A2541E5DB38D000095E8 /* APNSManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF55A2531E5DB38D000095E8 /* APNSManager.swift */; };
+		FF55A2561E5DB64C000095E8 /* NSUserDefault+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF55A2551E5DB64C000095E8 /* NSUserDefault+Extension.swift */; };
+		FF55A2581E5DB980000095E8 /* AppDelegate+PushNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF55A2571E5DB980000095E8 /* AppDelegate+PushNotification.swift */; };
+		FF5F337E1E5CEF3600264231 /* SearchPlace.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF5F337D1E5CEF3600264231 /* SearchPlace.storyboard */; };
+		FF5F33841E5CF62900264231 /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5F33831E5CF62900264231 /* UITextField+Extension.swift */; };
+		FF5F33881E5CF8B800264231 /* ContainerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5F33871E5CF8B800264231 /* ContainerVC.swift */; };
+		FF5F338C1E5CFB5300264231 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5F338B1E5CFB5300264231 /* MapVC.swift */; };
+		FF5F33941E5CFE9900264231 /* TranformableNAV.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5F33931E5CFE9900264231 /* TranformableNAV.swift */; };
 		FF6877921E5C737C007070D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6877911E5C737C007070D3 /* AppDelegate.swift */; };
-		FF6877941E5C737C007070D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6877931E5C737C007070D3 /* ViewController.swift */; };
 		FF6877971E5C737C007070D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF6877951E5C737C007070D3 /* Main.storyboard */; };
 		FF68779A1E5C737C007070D3 /* HeyTaxi.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FF6877981E5C737C007070D3 /* HeyTaxi.xcdatamodeld */; };
 		FF68779C1E5C737C007070D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF68779B1E5C737C007070D3 /* Assets.xcassets */; };
 		FF68779F1E5C737C007070D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF68779D1E5C737C007070D3 /* LaunchScreen.storyboard */; };
 		FF6877AA1E5C737C007070D3 /* HeyTaxiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6877A91E5C737C007070D3 /* HeyTaxiTests.swift */; };
 		FF6877B51E5C737C007070D3 /* HeyTaxiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6877B41E5C737C007070D3 /* HeyTaxiUITests.swift */; };
+		FF6877C31E5C7448007070D3 /* AppConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6877C21E5C7448007070D3 /* AppConstant.swift */; };
+		FF6877C51E5C747C007070D3 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6877C41E5C747C007070D3 /* Reachability.swift */; };
+		FF8A19741E5D3EAA00EE401A /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8A19731E5D3EAA00EE401A /* String+Extension.swift */; };
+		FF8A19761E5D402300EE401A /* WindowManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8A19751E5D402300EE401A /* WindowManager.swift */; };
+		FF8A19781E5D477E00EE401A /* NearbyPlaceGetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8A19771E5D477E00EE401A /* NearbyPlaceGetter.swift */; };
+		FFAAB34C1E5DEAB200C011E2 /* LocalNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAAB34B1E5DEAB200C011E2 /* LocalNotificationManager.swift */; };
+		FFAAB34E1E5DF81400C011E2 /* BuildingTripHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAAB34D1E5DF81400C011E2 /* BuildingTripHelper.swift */; };
+		FFAAB3501E5DF90200C011E2 /* Geofencing2.gpx in Resources */ = {isa = PBXBuildFile; fileRef = FFAAB34F1E5DF90200C011E2 /* Geofencing2.gpx */; };
+		FFE290041E5D1F2000ADD609 /* MapVC+MapViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE290031E5D1F2000ADD609 /* MapVC+MapViewDelegate.swift */; };
+		FFE290061E5D1FAB00ADD609 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE290051E5D1FAB00ADD609 /* LocationManager.swift */; };
+		FFE290081E5D236B00ADD609 /* BaseTranfromableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE290071E5D236B00ADD609 /* BaseTranfromableVC.swift */; };
+		FFE290171E5D264F00ADD609 /* PlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE290161E5D264F00ADD609 /* PlaceModel.swift */; };
+		FFE290191E5D27AA00ADD609 /* AppEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE290181E5D27AA00ADD609 /* AppEnum.swift */; };
+		FFE2901B1E5D296D00ADD609 /* PlaceModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE2901A1E5D296D00ADD609 /* PlaceModelManager.swift */; };
+		FFE290201E5D2E0B00ADD609 /* SearchPlaceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE2901C1E5D2E0B00ADD609 /* SearchPlaceVC.swift */; };
+		FFE290211E5D2E0B00ADD609 /* SearchPlaceVC+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE2901D1E5D2E0B00ADD609 /* SearchPlaceVC+Delegate.swift */; };
+		FFE290221E5D2E0B00ADD609 /* SearchPlaceVCDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE2901E1E5D2E0B00ADD609 /* SearchPlaceVCDataSource.swift */; };
+		FFE290261E5D2FEE00ADD609 /* MapView+Move.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE290251E5D2FEE00ADD609 /* MapView+Move.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,9 +70,29 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5F0A57100A8236735FB05840 /* libPods-HeyTaxi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HeyTaxi.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		67DD0364E53832A0D1B38418 /* Pods-HeyTaxi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeyTaxi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HeyTaxi/Pods-HeyTaxi.debug.xcconfig"; sourceTree = "<group>"; };
+		E52D873D271A2E6921B67E81 /* Pods-HeyTaxi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeyTaxi.release.xcconfig"; path = "Pods/Target Support Files/Pods-HeyTaxi/Pods-HeyTaxi.release.xcconfig"; sourceTree = "<group>"; };
+		FF1BDA5B1E5D64310075E8E3 /* Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		FF1BDA5D1E5D73E00075E8E3 /* Geofencing.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Geofencing.gpx; sourceTree = "<group>"; };
+		FF4F59241E5D095E00467F19 /* PlaceEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceEntity.swift; sourceTree = "<group>"; };
+		FF55A2451E5DA158000095E8 /* OrderTaxi.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = OrderTaxi.storyboard; sourceTree = "<group>"; };
+		FF55A2471E5DA1BD000095E8 /* Vehicles.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Vehicles.plist; sourceTree = "<group>"; };
+		FF55A2491E5DA1E1000095E8 /* SelectVehicleVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectVehicleVC.swift; sourceTree = "<group>"; };
+		FF55A24A1E5DA1E1000095E8 /* SelectVehicleCollectionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectVehicleCollectionVC.swift; sourceTree = "<group>"; };
+		FF55A24B1E5DA1E1000095E8 /* CollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewFlowLayout.swift; sourceTree = "<group>"; };
+		FF55A24C1E5DA1E1000095E8 /* SelectVehicleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectVehicleCell.swift; sourceTree = "<group>"; };
+		FF55A2521E5DB11D000095E8 /* HeyTaxi.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HeyTaxi.entitlements; sourceTree = "<group>"; };
+		FF55A2531E5DB38D000095E8 /* APNSManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APNSManager.swift; sourceTree = "<group>"; };
+		FF55A2551E5DB64C000095E8 /* NSUserDefault+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSUserDefault+Extension.swift"; sourceTree = "<group>"; };
+		FF55A2571E5DB980000095E8 /* AppDelegate+PushNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppDelegate+PushNotification.swift"; sourceTree = "<group>"; };
+		FF5F337D1E5CEF3600264231 /* SearchPlace.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SearchPlace.storyboard; sourceTree = "<group>"; };
+		FF5F33831E5CF62900264231 /* UITextField+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
+		FF5F33871E5CF8B800264231 /* ContainerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerVC.swift; sourceTree = "<group>"; };
+		FF5F338B1E5CFB5300264231 /* MapVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
+		FF5F33931E5CFE9900264231 /* TranformableNAV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TranformableNAV.swift; sourceTree = "<group>"; };
 		FF68778E1E5C737C007070D3 /* HeyTaxi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeyTaxi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF6877911E5C737C007070D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FF6877931E5C737C007070D3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FF6877961E5C737C007070D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FF6877991E5C737C007070D3 /* HeyTaxi.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HeyTaxi.xcdatamodel; sourceTree = "<group>"; };
 		FF68779B1E5C737C007070D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +104,24 @@
 		FF6877B01E5C737C007070D3 /* HeyTaxiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeyTaxiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF6877B41E5C737C007070D3 /* HeyTaxiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeyTaxiUITests.swift; sourceTree = "<group>"; };
 		FF6877B61E5C737C007070D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF6877C21E5C7448007070D3 /* AppConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConstant.swift; sourceTree = "<group>"; };
+		FF6877C41E5C747C007070D3 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		FF8A19731E5D3EAA00EE401A /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		FF8A19751E5D402300EE401A /* WindowManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindowManager.swift; sourceTree = "<group>"; };
+		FF8A19771E5D477E00EE401A /* NearbyPlaceGetter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearbyPlaceGetter.swift; sourceTree = "<group>"; };
+		FFAAB34B1E5DEAB200C011E2 /* LocalNotificationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalNotificationManager.swift; sourceTree = "<group>"; };
+		FFAAB34D1E5DF81400C011E2 /* BuildingTripHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuildingTripHelper.swift; sourceTree = "<group>"; };
+		FFAAB34F1E5DF90200C011E2 /* Geofencing2.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Geofencing2.gpx; sourceTree = "<group>"; };
+		FFE290031E5D1F2000ADD609 /* MapVC+MapViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MapVC+MapViewDelegate.swift"; sourceTree = "<group>"; };
+		FFE290051E5D1FAB00ADD609 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		FFE290071E5D236B00ADD609 /* BaseTranfromableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTranfromableVC.swift; sourceTree = "<group>"; };
+		FFE290161E5D264F00ADD609 /* PlaceModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceModel.swift; sourceTree = "<group>"; };
+		FFE290181E5D27AA00ADD609 /* AppEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppEnum.swift; sourceTree = "<group>"; };
+		FFE2901A1E5D296D00ADD609 /* PlaceModelManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceModelManager.swift; sourceTree = "<group>"; };
+		FFE2901C1E5D2E0B00ADD609 /* SearchPlaceVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchPlaceVC.swift; sourceTree = "<group>"; };
+		FFE2901D1E5D2E0B00ADD609 /* SearchPlaceVC+Delegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SearchPlaceVC+Delegate.swift"; sourceTree = "<group>"; };
+		FFE2901E1E5D2E0B00ADD609 /* SearchPlaceVCDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchPlaceVCDataSource.swift; sourceTree = "<group>"; };
+		FFE290251E5D2FEE00ADD609 /* MapView+Move.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MapView+Move.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +129,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5431BD10A9DA499EF88EF36F /* libPods-HeyTaxi.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +150,100 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E6E2B41C07B96A04A089AB7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5F0A57100A8236735FB05840 /* libPods-HeyTaxi.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ED55E510CAF1620B115F4F9F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				67DD0364E53832A0D1B38418 /* Pods-HeyTaxi.debug.xcconfig */,
+				E52D873D271A2E6921B67E81 /* Pods-HeyTaxi.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FF2882D51E5C8AA00013D41A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FFE2901A1E5D296D00ADD609 /* PlaceModelManager.swift */,
+				FF8A19771E5D477E00EE401A /* NearbyPlaceGetter.swift */,
+				FFE290051E5D1FAB00ADD609 /* LocationManager.swift */,
+				FFAAB34D1E5DF81400C011E2 /* BuildingTripHelper.swift */,
+				FFAAB34B1E5DEAB200C011E2 /* LocalNotificationManager.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		FF2882D61E5C8B460013D41A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FF6877981E5C737C007070D3 /* HeyTaxi.xcdatamodeld */,
+				FF4F59241E5D095E00467F19 /* PlaceEntity.swift */,
+				FFE290161E5D264F00ADD609 /* PlaceModel.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		FF2882D71E5C8B4F0013D41A /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				FF6877951E5C737C007070D3 /* Main.storyboard */,
+				FF5F337D1E5CEF3600264231 /* SearchPlace.storyboard */,
+				FF55A2451E5DA158000095E8 /* OrderTaxi.storyboard */,
+			);
+			name = Storyboard;
+			sourceTree = "<group>";
+		};
+		FF55A2511E5DA1E6000095E8 /* SelectVehicle */ = {
+			isa = PBXGroup;
+			children = (
+				FF55A2491E5DA1E1000095E8 /* SelectVehicleVC.swift */,
+				FF55A24A1E5DA1E1000095E8 /* SelectVehicleCollectionVC.swift */,
+				FF55A24B1E5DA1E1000095E8 /* CollectionViewFlowLayout.swift */,
+				FF55A24C1E5DA1E1000095E8 /* SelectVehicleCell.swift */,
+			);
+			name = SelectVehicle;
+			sourceTree = "<group>";
+		};
+		FF5F33851E5CF82100264231 /* Support files */ = {
+			isa = PBXGroup;
+			children = (
+				FF1BDA5D1E5D73E00075E8E3 /* Geofencing.gpx */,
+				FFAAB34F1E5DF90200C011E2 /* Geofencing2.gpx */,
+				FF8A19731E5D3EAA00EE401A /* String+Extension.swift */,
+				FF55A2551E5DB64C000095E8 /* NSUserDefault+Extension.swift */,
+				FF1BDA5B1E5D64310075E8E3 /* Button.swift */,
+				FF8A19751E5D402300EE401A /* WindowManager.swift */,
+				FF6877C21E5C7448007070D3 /* AppConstant.swift */,
+				FFE290251E5D2FEE00ADD609 /* MapView+Move.swift */,
+				FFE290181E5D27AA00ADD609 /* AppEnum.swift */,
+				FF68779B1E5C737C007070D3 /* Assets.xcassets */,
+				FF68779D1E5C737C007070D3 /* LaunchScreen.storyboard */,
+				FF6877C41E5C747C007070D3 /* Reachability.swift */,
+				FF5F33831E5CF62900264231 /* UITextField+Extension.swift */,
+				FF55A2471E5DA1BD000095E8 /* Vehicles.plist */,
+				FF6877A01E5C737C007070D3 /* Info.plist */,
+			);
+			name = "Support files";
+			sourceTree = "<group>";
+		};
+		FF5F33861E5CF84000264231 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FF5F33871E5CF8B800264231 /* ContainerVC.swift */,
+				FF55A2511E5DA1E6000095E8 /* SelectVehicle */,
+				FFE290021E5D1F0200ADD609 /* MapVC */,
+				FFE290241E5D2E1400ADD609 /* SearchPlaceVC */,
+				FFE290091E5D258100ADD609 /* TranformableVC */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		FF6877851E5C737C007070D3 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +251,8 @@
 				FF6877A81E5C737C007070D3 /* HeyTaxiTests */,
 				FF6877B31E5C737C007070D3 /* HeyTaxiUITests */,
 				FF68778F1E5C737C007070D3 /* Products */,
+				ED55E510CAF1620B115F4F9F /* Pods */,
+				3E6E2B41C07B96A04A089AB7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +269,15 @@
 		FF6877901E5C737C007070D3 /* HeyTaxi */ = {
 			isa = PBXGroup;
 			children = (
+				FF55A2521E5DB11D000095E8 /* HeyTaxi.entitlements */,
 				FF6877911E5C737C007070D3 /* AppDelegate.swift */,
-				FF6877931E5C737C007070D3 /* ViewController.swift */,
-				FF6877951E5C737C007070D3 /* Main.storyboard */,
-				FF68779B1E5C737C007070D3 /* Assets.xcassets */,
-				FF68779D1E5C737C007070D3 /* LaunchScreen.storyboard */,
-				FF6877A01E5C737C007070D3 /* Info.plist */,
-				FF6877981E5C737C007070D3 /* HeyTaxi.xcdatamodeld */,
+				FF55A2531E5DB38D000095E8 /* APNSManager.swift */,
+				FF55A2571E5DB980000095E8 /* AppDelegate+PushNotification.swift */,
+				FF2882D61E5C8B460013D41A /* Model */,
+				FF2882D51E5C8AA00013D41A /* Services */,
+				FF5F33861E5CF84000264231 /* Controller */,
+				FF2882D71E5C8B4F0013D41A /* Storyboard */,
+				FF5F33851E5CF82100264231 /* Support files */,
 			);
 			path = HeyTaxi;
 			sourceTree = "<group>";
@@ -128,6 +300,34 @@
 			path = HeyTaxiUITests;
 			sourceTree = "<group>";
 		};
+		FFE290021E5D1F0200ADD609 /* MapVC */ = {
+			isa = PBXGroup;
+			children = (
+				FF5F338B1E5CFB5300264231 /* MapVC.swift */,
+				FFE290031E5D1F2000ADD609 /* MapVC+MapViewDelegate.swift */,
+			);
+			name = MapVC;
+			sourceTree = "<group>";
+		};
+		FFE290091E5D258100ADD609 /* TranformableVC */ = {
+			isa = PBXGroup;
+			children = (
+				FF5F33931E5CFE9900264231 /* TranformableNAV.swift */,
+				FFE290071E5D236B00ADD609 /* BaseTranfromableVC.swift */,
+			);
+			name = TranformableVC;
+			sourceTree = "<group>";
+		};
+		FFE290241E5D2E1400ADD609 /* SearchPlaceVC */ = {
+			isa = PBXGroup;
+			children = (
+				FFE2901C1E5D2E0B00ADD609 /* SearchPlaceVC.swift */,
+				FFE2901D1E5D2E0B00ADD609 /* SearchPlaceVC+Delegate.swift */,
+				FFE2901E1E5D2E0B00ADD609 /* SearchPlaceVCDataSource.swift */,
+			);
+			name = SearchPlaceVC;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +335,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FF6877B91E5C737C007070D3 /* Build configuration list for PBXNativeTarget "HeyTaxi" */;
 			buildPhases = (
+				CF04EC4CE5B1A9134C714CD5 /* [CP] Check Pods Manifest.lock */,
 				FF68778A1E5C737C007070D3 /* Sources */,
 				FF68778B1E5C737C007070D3 /* Frameworks */,
 				FF68778C1E5C737C007070D3 /* Resources */,
+				1FD420E9442C35FC2847E7A4 /* [CP] Embed Pods Frameworks */,
+				A4D45A58CEFF41F7864BF3E7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -198,6 +401,11 @@
 						CreatedOnToolsVersion = 8.3;
 						DevelopmentTeam = 56AJJ634ZU;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					FF6877A41E5C737C007070D3 = {
 						CreatedOnToolsVersion = 8.3;
@@ -238,9 +446,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF5F337E1E5CEF3600264231 /* SearchPlace.storyboard in Resources */,
 				FF68779F1E5C737C007070D3 /* LaunchScreen.storyboard in Resources */,
+				FF1BDA5E1E5D73E00075E8E3 /* Geofencing.gpx in Resources */,
+				FFAAB3501E5DF90200C011E2 /* Geofencing2.gpx in Resources */,
 				FF68779C1E5C737C007070D3 /* Assets.xcassets in Resources */,
 				FF6877971E5C737C007070D3 /* Main.storyboard in Resources */,
+				FF55A2481E5DA1BD000095E8 /* Vehicles.plist in Resources */,
+				FF55A2461E5DA158000095E8 /* OrderTaxi.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,14 +473,91 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1FD420E9442C35FC2847E7A4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HeyTaxi/Pods-HeyTaxi-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4D45A58CEFF41F7864BF3E7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HeyTaxi/Pods-HeyTaxi-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF04EC4CE5B1A9134C714CD5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FF68778A1E5C737C007070D3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF55A24F1E5DA1E1000095E8 /* CollectionViewFlowLayout.swift in Sources */,
+				FF55A2581E5DB980000095E8 /* AppDelegate+PushNotification.swift in Sources */,
+				FF55A2561E5DB64C000095E8 /* NSUserDefault+Extension.swift in Sources */,
+				FFE290211E5D2E0B00ADD609 /* SearchPlaceVC+Delegate.swift in Sources */,
+				FF8A19741E5D3EAA00EE401A /* String+Extension.swift in Sources */,
+				FF5F33841E5CF62900264231 /* UITextField+Extension.swift in Sources */,
+				FFAAB34C1E5DEAB200C011E2 /* LocalNotificationManager.swift in Sources */,
+				FFE290201E5D2E0B00ADD609 /* SearchPlaceVC.swift in Sources */,
+				FF5F33881E5CF8B800264231 /* ContainerVC.swift in Sources */,
+				FFE290261E5D2FEE00ADD609 /* MapView+Move.swift in Sources */,
+				FFAAB34E1E5DF81400C011E2 /* BuildingTripHelper.swift in Sources */,
+				FF5F33941E5CFE9900264231 /* TranformableNAV.swift in Sources */,
+				FFE290041E5D1F2000ADD609 /* MapVC+MapViewDelegate.swift in Sources */,
+				FF55A2541E5DB38D000095E8 /* APNSManager.swift in Sources */,
+				FFE290191E5D27AA00ADD609 /* AppEnum.swift in Sources */,
 				FF68779A1E5C737C007070D3 /* HeyTaxi.xcdatamodeld in Sources */,
-				FF6877941E5C737C007070D3 /* ViewController.swift in Sources */,
+				FFE290061E5D1FAB00ADD609 /* LocationManager.swift in Sources */,
 				FF6877921E5C737C007070D3 /* AppDelegate.swift in Sources */,
+				FF55A24E1E5DA1E1000095E8 /* SelectVehicleCollectionVC.swift in Sources */,
+				FFE290171E5D264F00ADD609 /* PlaceModel.swift in Sources */,
+				FF6877C51E5C747C007070D3 /* Reachability.swift in Sources */,
+				FFE2901B1E5D296D00ADD609 /* PlaceModelManager.swift in Sources */,
+				FFE290081E5D236B00ADD609 /* BaseTranfromableVC.swift in Sources */,
+				FF8A19761E5D402300EE401A /* WindowManager.swift in Sources */,
+				FF1BDA5C1E5D64310075E8E3 /* Button.swift in Sources */,
+				FF4F59251E5D095E00467F19 /* PlaceEntity.swift in Sources */,
+				FF55A2501E5DA1E1000095E8 /* SelectVehicleCell.swift in Sources */,
+				FFE290221E5D2E0B00ADD609 /* SearchPlaceVCDataSource.swift in Sources */,
+				FF8A19781E5D477E00EE401A /* NearbyPlaceGetter.swift in Sources */,
+				FF55A24D1E5DA1E1000095E8 /* SelectVehicleVC.swift in Sources */,
+				FF5F338C1E5CFB5300264231 /* MapVC.swift in Sources */,
+				FF6877C31E5C7448007070D3 /* AppConstant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,10 +709,13 @@
 		};
 		FF6877BA1E5C737C007070D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67DD0364E53832A0D1B38418 /* Pods-HeyTaxi.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HeyTaxi/HeyTaxi.entitlements;
 				DEVELOPMENT_TEAM = 56AJJ634ZU;
 				INFOPLIST_FILE = HeyTaxi/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.Big0.HeyTaxi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -432,10 +725,13 @@
 		};
 		FF6877BB1E5C737C007070D3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E52D873D271A2E6921B67E81 /* Pods-HeyTaxi.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HeyTaxi/HeyTaxi.entitlements;
 				DEVELOPMENT_TEAM = 56AJJ634ZU;
 				INFOPLIST_FILE = HeyTaxi/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.Big0.HeyTaxi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -520,6 +816,7 @@
 				FF6877BB1E5C737C007070D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FF6877BC1E5C737C007070D3 /* Build configuration list for PBXNativeTarget "HeyTaxiTests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +825,7 @@
 				FF6877BE1E5C737C007070D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FF6877BF1E5C737C007070D3 /* Build configuration list for PBXNativeTarget "HeyTaxiUITests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +834,7 @@
 				FF6877C11E5C737C007070D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
