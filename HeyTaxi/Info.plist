@@ -41,6 +41,7 @@
 	<string>Chúng tôi cần thông tin về vị trí của bạn để có thể đón bạn chính xác, tính toán quãng đường đi,... Vì vậy vui lòng giúp đỡ bằng cách cho phép chúng truy cập thông tin này ngay cả khi chương trình chạy ẩn - chế độ Always hoặc Luôn luôn </string>
 	<key>UIBackgroundModes</key>
 	<array>
+		<string>location</string>
 		<string>remote-notification</string>
 	</array>
 	<key>UILaunchStoryboardName</key>

@@ -17,7 +17,6 @@
 		FF55A24E1E5DA1E1000095E8 /* SelectVehicleCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF55A24A1E5DA1E1000095E8 /* SelectVehicleCollectionVC.swift */; };
 		FF55A24F1E5DA1E1000095E8 /* CollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF55A24B1E5DA1E1000095E8 /* CollectionViewFlowLayout.swift */; };
 		FF55A2501E5DA1E1000095E8 /* SelectVehicleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF55A24C1E5DA1E1000095E8 /* SelectVehicleCell.swift */; };
-		FF55A2541E5DB38D000095E8 /* APNSManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF55A2531E5DB38D000095E8 /* APNSManager.swift */; };
 		FF55A2561E5DB64C000095E8 /* NSUserDefault+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF55A2551E5DB64C000095E8 /* NSUserDefault+Extension.swift */; };
 		FF55A2581E5DB980000095E8 /* AppDelegate+PushNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF55A2571E5DB980000095E8 /* AppDelegate+PushNotification.swift */; };
 		FF5F337E1E5CEF3600264231 /* SearchPlace.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF5F337D1E5CEF3600264231 /* SearchPlace.storyboard */; };
@@ -83,7 +82,6 @@
 		FF55A24B1E5DA1E1000095E8 /* CollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewFlowLayout.swift; sourceTree = "<group>"; };
 		FF55A24C1E5DA1E1000095E8 /* SelectVehicleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectVehicleCell.swift; sourceTree = "<group>"; };
 		FF55A2521E5DB11D000095E8 /* HeyTaxi.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HeyTaxi.entitlements; sourceTree = "<group>"; };
-		FF55A2531E5DB38D000095E8 /* APNSManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APNSManager.swift; sourceTree = "<group>"; };
 		FF55A2551E5DB64C000095E8 /* NSUserDefault+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSUserDefault+Extension.swift"; sourceTree = "<group>"; };
 		FF55A2571E5DB980000095E8 /* AppDelegate+PushNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppDelegate+PushNotification.swift"; sourceTree = "<group>"; };
 		FF5F337D1E5CEF3600264231 /* SearchPlace.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SearchPlace.storyboard; sourceTree = "<group>"; };
@@ -271,7 +269,6 @@
 			children = (
 				FF55A2521E5DB11D000095E8 /* HeyTaxi.entitlements */,
 				FF6877911E5C737C007070D3 /* AppDelegate.swift */,
-				FF55A2531E5DB38D000095E8 /* APNSManager.swift */,
 				FF55A2571E5DB980000095E8 /* AppDelegate+PushNotification.swift */,
 				FF2882D61E5C8B460013D41A /* Model */,
 				FF2882D51E5C8AA00013D41A /* Services */,
@@ -539,7 +536,6 @@
 				FFAAB34E1E5DF81400C011E2 /* BuildingTripHelper.swift in Sources */,
 				FF5F33941E5CFE9900264231 /* TranformableNAV.swift in Sources */,
 				FFE290041E5D1F2000ADD609 /* MapVC+MapViewDelegate.swift in Sources */,
-				FF55A2541E5DB38D000095E8 /* APNSManager.swift in Sources */,
 				FFE290191E5D27AA00ADD609 /* AppEnum.swift in Sources */,
 				FF68779A1E5C737C007070D3 /* HeyTaxi.xcdatamodeld in Sources */,
 				FFE290061E5D1FAB00ADD609 /* LocationManager.swift in Sources */,

@@ -6,7 +6,7 @@
 //  Copyright © 2017 Trương Thắng. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
 
 extension Double {

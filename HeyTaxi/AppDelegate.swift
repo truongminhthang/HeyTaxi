@@ -33,16 +33,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         setupReachability()
         setupGoogleMap()
         windowManager = WindowManager(window: window!)
-        APNSManager.shared.registerRemoteNotification()
-        //Requesting Authorization for User Interactions
-        if #available(iOS 10.0, *) {
-            let center = UNUserNotificationCenter.current()
-            center.requestAuthorization(options: [.alert, .sound]) { (granted, error) in
-                // Enable or disable features based on authorization.
-            }
-        } else {
-            // Fallback on earlier versions
-        }
+        registerRemoteNotification()
+        
         return true
     }
     

@@ -17,8 +17,8 @@ class LocalNotificationManager: NSObject {
     func triggerNotification(title: String, body: String, imageName: String = "", delay: TimeInterval = 1) {
         if #available(iOS 10.0, *) {
             let content = UNMutableNotificationContent()
-            content.title = "title"
-            content.body = "Did Exit pickup Region"
+            content.title = title
+            content.body = body
             content.sound = UNNotificationSound.default()
             content.badge = (UIApplication.shared.applicationIconBadgeNumber  + 1) as NSNumber
             

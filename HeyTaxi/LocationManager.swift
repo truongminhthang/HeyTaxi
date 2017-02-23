@@ -53,6 +53,16 @@ class LocationManager: CLLocationManager, CLLocationManagerDelegate {
         }
     }
     
+    
+    
+    func stopMonitoring() {
+        for region in self.monitoredRegions {
+            if let circularRegion = region as? CLCircularRegion {
+                self.stopMonitoring(for: circularRegion)
+            }
+        }
+    }
+    
     // Handle incoming location events.
     
     
@@ -93,7 +103,10 @@ class LocationManager: CLLocationManager, CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didExitRegion region: CLRegion) {
         if let circularRegion = region as? CLCircularRegion {
             if circularRegion.identifier == ZoneID.pickup {
-               LocalNotificationManager().triggerNotification(title: "Thông báo", body: "Chúc các bạn có 1 chuyến đi vui vẻ", imageName: "", delay: 1)
+                DispatchQueue.main.async {
+                    LocalNotificationManager().triggerNotification(title: "Thông báo", body: "Chúc các bạn có 1 chuyến đi vui vẻ", imageName: "", delay: 1)
+                    
+                }
             }
         }
     }
@@ -106,13 +119,6 @@ class LocationManager: CLLocationManager, CLLocationManagerDelegate {
         print("didStartMonitoringFor region: \(region.description)")
     }
     
-    func stopMonitoring() {
-        for region in self.monitoredRegions {
-            if let circularRegion = region as? CLCircularRegion {
-                self.stopMonitoring(for: circularRegion)
-            }
-        }
-    }
 }
 
 

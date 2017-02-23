@@ -80,6 +80,10 @@ class SearchPlaceVC: BaseTranformableVC  {
             fatalError("Error: CLLocationManager is Monitoring Unavailable")
         }
     }
+    
+    @IBAction override func handlePanGesture(_ sender: UIPanGestureRecognizer) {
+        super.handlePanGesture(sender)
+    }
 
 }
 

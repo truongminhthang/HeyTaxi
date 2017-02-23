@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12113" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12078"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -17,7 +17,7 @@
                         <size key="portraitSize" width="375" height="247"/>
                         <size key="landscapeSize" width="247" height="375"/>
                     </fixedSimulatedSizeMetrics>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" backIndicatorImage="Back Chevron" id="H0S-he-sHu">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" backIndicatorImage="Back Chevron" id="H0S-he-sHu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <gestureRecognizers/>
@@ -50,6 +50,7 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="63" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gP7-0L-YDV">
                                 <rect key="frame" x="0.0" y="44" width="375" height="306"/>
                                 <color key="backgroundColor" red="0.21176470589999999" green="0.22352941179999999" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
                                 <view key="tableFooterView" contentMode="scaleToFill" id="odd-Bd-Avh">
                                     <rect key="frame" x="0.0" y="91" width="375" height="100"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -86,6 +87,7 @@
                                 <connections>
                                     <outlet property="dataSource" destination="82a-QT-Zc4" id="4yc-pC-yaC"/>
                                     <outlet property="delegate" destination="82a-QT-Zc4" id="eX0-1x-q1X"/>
+                                    <outletCollection property="gestureRecognizers" destination="xGp-XO-cEv" appends="YES" id="zSq-aX-NFz"/>
                                 </connections>
                             </tableView>
                             <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Pi-1e-lni">
@@ -146,9 +148,6 @@
                             <constraint firstItem="Emp-fy-Dvg" firstAttribute="top" secondItem="2Pi-1e-lni" secondAttribute="bottom" id="eG9-8K-SP5"/>
                             <constraint firstItem="gP7-0L-YDV" firstAttribute="leading" secondItem="kdZ-hq-Z5T" secondAttribute="leading" id="lfa-ZK-SU3"/>
                         </constraints>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="xGp-XO-cEv" appends="YES" id="rqO-lk-4eM"/>
-                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="Rmh-3E-vWD">
                         <barButtonItem key="backBarButtonItem" title=" " id="QvM-bb-5JS">
@@ -164,14 +163,10 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2kF-Sa-Po0" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <panGestureRecognizer minimumNumberOfTouches="1" id="xGp-XO-cEv">
-                    <connections>
-                        <outlet property="delegate" destination="82a-QT-Zc4" id="gJg-GP-E1m"/>
-                    </connections>
-                </panGestureRecognizer>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="Ujv-Na-xW7">
                     <connections>
                         <action selector="handlePanGesture:" destination="82a-QT-Zc4" id="8qa-EX-hSF"/>
+                        <outlet property="delegate" destination="82a-QT-Zc4" id="bTU-lQ-zo3"/>
                     </connections>
                 </panGestureRecognizer>
                 <searchBar contentMode="redraw" barStyle="black" searchBarStyle="minimal" placeholder="Bạn muốn đến đâu?" translatesAutoresizingMaskIntoConstraints="NO" id="QC0-wa-RGZ">
@@ -187,6 +182,12 @@
                         <outletCollection property="gestureRecognizers" destination="Ujv-Na-xW7" appends="YES" id="cQ5-io-dDA"/>
                     </connections>
                 </searchBar>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="xGp-XO-cEv">
+                    <connections>
+                        <action selector="handlePanGesture:" destination="82a-QT-Zc4" id="8jA-tu-MTT"/>
+                        <outlet property="delegate" destination="82a-QT-Zc4" id="gJg-GP-E1m"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="5337" y="1099"/>
         </scene>
@@ -283,7 +284,7 @@
         <scene sceneID="v8e-bL-4M1">
             <objects>
                 <collectionViewController storyboardIdentifier="SelectVehicleCollectionVC" id="RP7-X6-C5z" customClass="SelectVehicleCollectionVC" customModule="HeyTaxi" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" id="N5p-Ep-7yS">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" id="N5p-Ep-7yS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="276"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.21176470589999999" green="0.22352941179999999" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
